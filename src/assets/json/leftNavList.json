@@ -5,12 +5,12 @@
     "title": "详情页一"
   },
   {
-    "route": "detailPage1",
+    "route": "detailPage2",
     "image": "https://chengud.newchuangye.com/images/bigData/dppeixunshuju.png",
     "title": "详情页二"
   },
   {
-    "route": "detailPage1",
+    "route": "detailPage3",
     "image": "https://chengud.newchuangye.com/images/bigData/dppeixunshuju.png",
     "title": "详情页三"
   },

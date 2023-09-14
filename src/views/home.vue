@@ -6,7 +6,12 @@
       </div>
       <div class="midBox">
         <div class="mleft">
-          <div class="mlItem" v-for="(item, index) in leftNavList" :key="index">
+          <div
+            class="mlItem"
+            v-for="(item, index) in leftNavList"
+            :key="index"
+            @click="toNav(index)"
+          >
             <span>{{ item.title }}</span>
           </div>
         </div>
@@ -16,6 +21,7 @@
             type="card"
             indicator-position="none"
             height="500px"
+            ref="carousel"
           >
             <el-carousel-item v-for="(item, index) in leftNavList" :key="index">
               <div class="mrItem" @click="toDetail(item)">
@@ -49,6 +55,9 @@ export default {
       this.$router.push({
         name: e.route,
       });
+    },
+    toNav(index) {
+      this.$refs.carousel.setActiveItem(index);
     },
   },
 };
@@ -95,8 +104,8 @@ export default {
       }
     }
     .mright {
-      width: calc(100% - 285px);
-      margin-left: 20px;
+      width: calc(100% - 305px);
+      margin-left: 30px;
       .mrItem {
         height: 100%;
         background-image: url("@/assets/imgs/home_item_bg.png");

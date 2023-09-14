@@ -35,6 +35,11 @@ const routes = [
         meta: { title: "详情页2" },
         component: resolve => (require(["@/views/detail/page2"], resolve)),
       }, {
+        path: "page3",
+        name: "detailPage3",
+        meta: { title: "详情页3" },
+        component: resolve => (require(["@/views/detail/page3"], resolve)),
+      }, {
         path: "*",
         name: "detail404",
         component: resolve => (require(["@/views/404"], resolve)),
