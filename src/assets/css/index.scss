@@ -59,3 +59,7 @@ pre {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
+a {
+  user-select: none;
+}

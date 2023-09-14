@@ -77,6 +77,7 @@ export default {
     font-size: 28px;
     color: #fff;
     text-align: center;
+    user-select: none;
   }
   .midBox {
     display: flex;
@@ -98,6 +99,7 @@ export default {
         cursor: pointer;
         margin: 3px 0;
         text-align: center;
+        user-select: none;
       }
       .mlItem:hover {
         background-color: rgb(55, 76, 197);
